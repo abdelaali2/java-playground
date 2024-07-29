@@ -8,10 +8,18 @@ public class Session {
     private long y = 1L;
     private float z = 2.5f;
     private String name = "Ibrahim";
+    private Human owner;
 
 //    Methods
 //    Each property should have at most only 1 getter and at least 1 setter.
 //    All setters return void and take only 1 Argument.
+    public Human getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Human owner) {
+        this.owner = owner;
+    }
     public void setX(int x){
         this.x = x;
     }
